@@ -1,0 +1,31 @@
+<h1>Welcome user.</h1>
+<table>
+    <tr>
+        <th>id</th>
+        <th>time</th>
+        <th>place</th>
+        <th>note</th>
+        <th>options</th>
+    </tr>
+    <tr ng-repeat="note in listNotes">
+        <td>{{note.id}}</td>
+        <td>{{note.time}}</td>
+        <td>{{note.place}}</td>
+        <td>{{note.note}}</td>
+        <td>
+            <a href="#/dashboard" ng-click="del(note.id)">Delete</a> |
+            <a href="#/dashboard" ng-click="selectEdit(note.id)">Edit</a>
+        </td>
+    </tr>
+</table>
+
+<h3>Edit information:</h3>
+<p>id: </p>
+<input type="text" ng-model="id">
+<p>time: </p>
+<input type="text" ng-model="time">
+<p>place: </p>
+<input type="text" ng-model="place">
+<p>note: </p> <input type="text" ng-model="note">
+<input type="button" value="Add" ng-click="add()">
+<input type="button" value="Save" ng-click="edit()">
