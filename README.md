@@ -7,3 +7,5 @@ TODO:<br />
 <li>php framework 'laravel'</li>
 <li>authorization JWT (JSON Web Tokens)</li>
 </ul>
+
+Soon Updating Login Concept
